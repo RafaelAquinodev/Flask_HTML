@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol</title>
+</head>
+<body>
+    <h2>Clubes</h2>
+    <hr>
+    <ol>
+        {% for time in times %}
+            <li>{{time}}</li>
+        {%endfor%}
+        <br>
+    <form action="{{url_for('futebol')}}" method="POST">
+        <label>clube</label>
+        <input type-="text" name="time" autocomplete="off">
+        <button>Adicionar</button>
+    </form>
+    </ol>
+</body>
+</html>
