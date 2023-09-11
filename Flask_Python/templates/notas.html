@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html >
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alunos</title>
-</head>
-<body>
-    <h2>Notas</h2>
+{% extends 'base.html' %}
+{% block conteudo %}
+
+
+    <h2 style="text-align: center;">Notas</h2>
     <hr>
         {% for registro in registros %}
             <details>
@@ -23,5 +19,5 @@
         <input type = "text" name="notas" required autocomplete="off">
         <button>Adicionar</button>
     </form>
-</body>
-</html>
+
+{% endblock conteudo %}
